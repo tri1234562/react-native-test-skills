@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    borderBottomWidth: 1,
-    borderBottomColor: '#9c9a97',
+    // borderBottomWidth: 1,
+    // borderBottomColor: '#9c9a97',
     marginBottom: 15,
   },
   wrapperSelect: {
@@ -12,19 +12,27 @@ export const styles = StyleSheet.create({
   label: {
     flex: 1,
     justifyContent: 'center',
+    paddingTop: 30,
+  },
+  customLabel: {
+    flex: 1,
+    justifyContent: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#d3d9de',
+    marginBottom: 8,
   },
   labelMessage: {
     fontSize: 16,
     color: '#9c9a97',
   },
   selectMethod: {
-    flex: 1.3,
-    justifyContent: 'flex-start'
+    flex: 1.4,
+    justifyContent: 'center',
   },
-  currentValue: {
-    padding: 0,
-    color: 'green',
-    width: "100%",
-    backgroundColor: 'transparent',
+  dropdown: {
+    color: '#3493e3',
+    borderBottomWidth: 0,
+    marginBottom: 10,
+    fontWeight: '700',
   },
 });

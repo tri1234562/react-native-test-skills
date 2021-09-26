@@ -4,12 +4,12 @@ import RequestBookingView from './RequestBookingView';
 import { useConfirmPayment } from '@stripe/stripe-react-native';
 
 const API_URL = 'http://localhost:3000';
-const PaymentMethod = ['Cash', 'Visa/MasterCard/AMEX'];
+const PaymentMethod = [{ value: 'Cash' }, { value: 'Visa/MasterCard/AMEX'}];
 
 const RequestBookingContainer = (props) => {
   const { confirmPayment, loading } = useConfirmPayment();
   const [cardData, setCardData] = useState({});
-  const [currentMethod, setCurrentMethod] = useState(PaymentMethod[1]);
+  const [currentMethod, setCurrentMethod] = useState(PaymentMethod[1].value);
   const [isSubmitBtn, setIsSubmitBtn] = useState(false);
   const fetchPaymentIntent = async () => {
     const response = await fetch(`${API_URL}/create-payment`, {
@@ -23,7 +23,7 @@ const RequestBookingContainer = (props) => {
   };
 
   const handlePayment = async () => {
-    if (currentMethod === PaymentMethod[0]) {
+    if (currentMethod === PaymentMethod[0].value) {
       Alert.alert('Payment Successful');
     } else {
       if (!cardData.complete) {

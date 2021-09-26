@@ -77,9 +77,10 @@ const RequestBookingView = (props) => {
             style={styles.mgh20}
             onChangeCurrentMethod={onChangeCurrentMethod}
             PaymentMethodList={PaymentMethodList}
+            currentMethod={currentMethod}
           />
         </View>
-        {currentMethod === PaymentMethodList[1] && (
+        {currentMethod === PaymentMethodList[1].value && (
           <View style={styles.partFour}>
             <Text style={[styles.partTitle, styles.pdh20]}>
               ENTER PAYMENT DETAIL
