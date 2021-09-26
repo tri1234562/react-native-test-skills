@@ -1,30 +1,25 @@
 import React from 'react';
-import { View, Picker, Text } from 'react-native';
-import SelectDropdown from 'react-native-select-dropdown';
+import { View, Text } from 'react-native';
 import { styles } from './PaymentMethodStyles';
-
+import { Dropdown } from 'react-native-material-dropdown';
 const PaymentMethod = (props) => {
-  const { PaymentMethodList, onChangeCurrentMethod } = props;
+  const { PaymentMethodList, onChangeCurrentMethod, currentMethod } = props;
   return (
     <View style={[styles.container, props.style]}>
       <View style={styles.wrapperSelect}>
         <View style={styles.label}>
-          <Text style={styles.labelMessage}>Select Method</Text>
+          <View style={styles.customLabel}>
+            <Text style={styles.labelMessage}>Select Method</Text>
+          </View>
         </View>
         <View style={styles.selectMethod}>
-          <SelectDropdown
-            buttonStyle={styles.currentValue}
+          <Dropdown
             data={PaymentMethodList}
-            defaultValue={PaymentMethodList[1]}
-            onSelect={(selectedItem, index) => {
-              onChangeCurrentMethod(selectedItem);
+            onChangeText={(value) => {
+              onChangeCurrentMethod(value);
             }}
-            buttonTextAfterSelection={(selectedItem, index) => {
-              return selectedItem;
-            }}
-            rowTextForSelection={(item, index) => {
-              return item;
-            }}
+            value={currentMethod}
+            style={styles.dropdown}
           />
         </View>
       </View>

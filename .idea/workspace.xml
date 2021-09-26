@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6edede8-efd8-4708-a3db-c35d0307897a" name="Default Changelist" comment="" />
+    <list default="true" id="b6edede8-efd8-4708-a3db-c35d0307897a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PaymentMethod/PaymentMethodStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaymentMethod/PaymentMethodStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PaymentMethod/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaymentMethod/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/RequestBooking/RequestBookingContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/RequestBooking/RequestBookingContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/RequestBooking/RequestBookingView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/RequestBooking/RequestBookingView.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,9 +42,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="213" y="212" width="1480" height="825" key="AVDManager" timestamp="1632338053820">
+    <state x="200" y="212" width="1480" height="825" key="AVDManager" timestamp="1632646163798">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="213" y="212" width="1480" height="825" key="AVDManager/1680.289.1280.695/0.25.1680.1025@0.25.1680.1025" timestamp="1632338053820" />
+    <state x="200" y="212" width="1480" height="825" key="AVDManager/1680.289.1280.695/0.25.1680.1025@0.25.1680.1025" timestamp="1632646163798" />
   </component>
 </project>
